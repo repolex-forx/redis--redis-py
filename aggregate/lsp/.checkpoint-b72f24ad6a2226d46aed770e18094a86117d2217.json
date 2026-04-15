@@ -1,11 +1,20 @@
 {
   "commit_sha": "b72f24ad6a2226d46aed770e18094a86117d2217",
   "completed_files": [
+    "doctests/dt_vec_set.py",
+    "redis/commands/core.py",
+    "redis/connection.py",
+    "tests/maint_notifications/test_cluster_maint_notifications_handling.py",
     "tests/test_asyncio/test_bloom.py",
     "tests/test_asyncio/test_commands.py",
+    "tests/test_asyncio/test_search.py",
+    "tests/test_asyncio/test_timeseries.py",
     "tests/test_cache.py",
+    "tests/test_cluster.py",
     "tests/test_credentials.py",
-    "tests/test_search.py"
+    "tests/test_scenario/test_active_active.py",
+    "tests/test_search.py",
+    "tests/test_vsets.py"
   ],
   "completed_types": [],
   "stats": {
@@ -13,13 +22,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/b72f24ad6a2226d46aed770e18094a86117d2217.nq.gz",
     "call_sites": 43621,
     "import_statements": 1977,
-    "call_targets_resolved": 814,
+    "call_targets_resolved": 2147,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 6213,
+    "errors": 12361,
     "extends_clauses": 491,
     "implements_clauses": 0,
     "import_modules_denormalized": 3726,
@@ -27,5 +36,5 @@
     "extends_class_denormalized": 491,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14402
+  "elapsed_seconds": 14405
 }
