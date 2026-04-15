@@ -1,0 +1,31 @@
+{
+  "commit_sha": "b72f24ad6a2226d46aed770e18094a86117d2217",
+  "completed_files": [
+    "tests/test_asyncio/test_bloom.py",
+    "tests/test_asyncio/test_commands.py",
+    "tests/test_cache.py",
+    "tests/test_credentials.py",
+    "tests/test_search.py"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/redis/redis-py/lsp/b72f24ad6a2226d46aed770e18094a86117d2217",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/b72f24ad6a2226d46aed770e18094a86117d2217.nq.gz",
+    "call_sites": 43621,
+    "import_statements": 1977,
+    "call_targets_resolved": 814,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 6213,
+    "extends_clauses": 491,
+    "implements_clauses": 0,
+    "import_modules_denormalized": 3726,
+    "import_symbols_denormalized": 3647,
+    "extends_class_denormalized": 491,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 14402
+}
