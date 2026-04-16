@@ -1,0 +1,117 @@
+[2026-04-16T01:21:56Z] === ENRICH ITERATION 6 START | repo=redis/redis-py sha=b72f24ad ===
+[2026-04-16T01:21:56Z] [iter=6] PHASE START: enrich repo=redis/redis-py sha=b72f24ad runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b72f24ad-enrich-iter-006.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b72f24ad6a2226d46aed770e18094a86117d2217.nq.gz
+[2026-04-16T01:22:02Z] [iter=6] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-04-16T01:22:57Z] [iter=6] AST store loaded triples=5805770 load_secs=53 mem_mb=1008 MB
+[2026-04-16T01:22:57Z] [iter=6] Step 2: Finding LSP targets mem_mb=1008 MB
+[2026-04-16T01:23:16Z] [iter=6] LSP targets found call_sites=43621 imports=1977 extends=491 implements=0 secs=18
+[2026-04-16T01:23:23Z] [iter=6] Loaded checkpoint partial graph triples=180097
+[2026-04-16T01:23:40Z] [iter=6] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1008 MB
+[2026-04-16T01:24:13Z] [iter=6] Position index built positions=393718 nodes_with_types=513370 secs=33 mem_mb=1618 MB
+[2026-04-16T01:24:13Z] [iter=6] Step 3: Starting LSP resolution mem_mb=1618 MB already_completed_types=[] already_completed_files=104
+[2026-04-16T01:24:13Z] [iter=6] Resolving target type target_type=call_site count=43621
+[2026-04-16T01:24:14Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=2.3 files_done=0 resolved=0 errors=0 current=redis/cache.py
+[2026-04-16T01:25:30Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=3.6 files_done=1 resolved=1 errors=40 current=tests/test_background.py
+[2026-04-16T01:26:53Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=4.9 files_done=2 resolved=43 errors=84 current=redis/_parsers/commands.py
+[2026-04-16T01:30:18Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=8.4 files_done=3 resolved=75 errors=191 current=tests/test_lock.py
+[2026-04-16T01:34:39Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=12.7 files_done=4 resolved=84 errors=330 current=tests/test_asyncio/test_command_policies.py
+[2026-04-16T01:36:08Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=14.2 files_done=5 resolved=90 errors=377 current=doctests/dt_json.py
+[2026-04-16T01:39:18Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=17.4 files_done=6 resolved=134 errors=478 current=redis/commands/search/hybrid_query.py
+[2026-04-16T01:40:29Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=18.5 files_done=7 resolved=145 errors=516 current=redis/commands/search/query.py
+[2026-04-16T01:41:12Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=19.3 files_done=8 resolved=164 errors=538 current=tests/test_data_structure.py
+[2026-04-16T01:42:14Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=20.3 files_done=9 resolved=174 errors=571 current=tests/test_monitor.py
+[2026-04-16T01:42:57Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=21.0 files_done=10 resolved=177 errors=594 current=tests/test_observability/test_metrics_connection_attributes.py
+[2026-04-16T01:43:39Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=21.7 files_done=11 resolved=188 errors=616 current=redis/asyncio/multidb/client.py
+[2026-04-16T01:46:26Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=24.5 files_done=12 resolved=203 errors=705 current=tests/test_asyncio/test_multidb/test_failover.py
+[2026-04-16T01:49:00Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=27.1 files_done=14 resolved=219 errors=781 current=redis/http/http_client.py
+[2026-04-16T01:50:54Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=29.0 files_done=15 resolved=243 errors=841 current=tests/test_auth/test_token.py
+[2026-04-16T01:51:43Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=29.8 files_done=16 resolved=243 errors=867 current=redis/commands/bf/info.py
+[2026-04-16T01:52:26Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=30.5 files_done=19 resolved=272 errors=890 current=redis/observability/providers.py
+[2026-04-16T01:53:05Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=31.2 files_done=20 resolved=277 errors=911 current=doctests/home_prob_dts.py
+[2026-04-16T01:55:05Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=33.2 files_done=21 resolved=311 errors=975 current=tests/test_sentinel.py
+[2026-04-16T01:57:30Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=35.6 files_done=22 resolved=336 errors=1052 current=tests/test_asyncio/test_credentials.py
+[2026-04-16T02:02:33Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=40.6 files_done=23 resolved=380 errors=1213 current=doctests/dt_set.py
+[2026-04-16T02:03:52Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=41.9 files_done=24 resolved=402 errors=1255 current=redis/commands/json/commands.py
+[2026-04-16T02:06:11Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=44.2 files_done=25 resolved=432 errors=1329 current=tests/test_asyncio/test_scenario/conftest.py
+[2026-04-16T02:07:00Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=45.1 files_done=26 resolved=435 errors=1355 current=tests/test_function.py
+[2026-04-16T02:08:41Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=46.7 files_done=27 resolved=438 errors=1409 current=tests/test_multidb/conftest.py
+[2026-04-16T02:09:53Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=47.9 files_done=29 resolved=457 errors=1447 current=redis/commands/vectorset/commands.py
+[2026-04-16T02:11:21Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=49.4 files_done=30 resolved=468 errors=1494 current=benchmarks/basic_operations.py
+[2026-04-16T02:13:03Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=51.1 files_done=31 resolved=485 errors=1548 current=benchmarks/command_packer_benchmark.py
+[2026-04-16T02:13:45Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=51.8 files_done=32 resolved=509 errors=1570 current=redis/commands/search/querystring.py
+[2026-04-16T02:15:02Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=53.1 files_done=33 resolved=529 errors=1611 current=doctests/cmds_list.py
+[2026-04-16T02:16:00Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=54.1 files_done=34 resolved=553 errors=1642 current=redis/_parsers/resp3.py
+[2026-04-16T02:17:20Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=55.4 files_done=35 resolved=591 errors=1684 current=redis/commands/vectorset/utils.py
+[2026-04-16T02:17:52Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=55.9 files_done=36 resolved=608 errors=1701 current=redis/commands/search/aggregation.py
+[2026-04-16T02:18:36Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=56.7 files_done=37 resolved=632 errors=1724 current=tests/test_asyncio/mocks.py
+[2026-04-16T02:19:37Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=57.7 files_done=40 resolved=663 errors=1755 current=doctests/dt_bitmap.py
+[2026-04-16T02:20:46Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=58.8 files_done=41 resolved=711 errors=1792 current=redis/commands/policies.py
+[2026-04-16T02:22:15Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=60.3 files_done=42 resolved=725 errors=1839 current=tests/test_asyncio/test_multidb/test_command_executor.py
+[2026-04-16T02:23:15Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=61.3 files_done=43 resolved=738 errors=1871 current=benchmarks/cluster_async.py
+[2026-04-16T02:25:04Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=63.1 files_done=44 resolved=835 errors=1929 current=tests/test_asyncio/test_multidb/test_failure_detector.py
+[2026-04-16T02:26:12Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=64.3 files_done=45 resolved=858 errors=1965 current=tests/test_asyncio/test_encoding.py
+[2026-04-16T02:27:18Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=65.4 files_done=46 resolved=875 errors=2000 current=redis/asyncio/multidb/healthcheck.py
+[2026-04-16T02:28:24Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=66.5 files_done=47 resolved=902 errors=2035 current=redis/commands/redismodules.py
+[2026-04-16T02:30:16Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=68.3 files_done=49 resolved=912 errors=2095 current=redis/commands/vectorset/__init__.py
+[2026-04-16T02:31:39Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=69.7 files_done=51 resolved=918 errors=2139 current=tests/test_command_parser.py
+[2026-04-16T02:32:56Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=71.0 files_done=52 resolved=927 errors=2180 current=tests/test_asyncio/test_client.py
+[2026-04-16T02:34:37Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=72.7 files_done=53 resolved=967 errors=2234 current=doctests/search_quickstart.py
+[2026-04-16T02:36:11Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=74.2 files_done=54 resolved=982 errors=2284 current=tests/test_connect.py
+[2026-04-16T02:37:26Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=75.5 files_done=55 resolved=1002 errors=2324 current=redis/asyncio/lock.py
+[2026-04-16T02:38:26Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=76.5 files_done=56 resolved=1020 errors=2356 current=redis/commands/json/__init__.py
+[2026-04-16T02:39:00Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=77.1 files_done=57 resolved=1023 errors=2374 current=doctests/dt_hll.py
+[2026-04-16T02:40:52Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=78.9 files_done=59 resolved=1070 errors=2434 current=tests/test_asyncio/test_multidb/test_config.py
+[2026-04-16T02:41:28Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=79.5 files_done=60 resolved=1096 errors=2453 current=tests/test_multidb/test_pipeline.py
+[2026-04-16T02:43:55Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=82.0 files_done=61 resolved=1144 errors=2531 current=redis/_parsers/resp2.py
+[2026-04-16T02:44:40Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=82.7 files_done=62 resolved=1154 errors=2555 current=redis/retry.py
+[2026-04-16T02:45:48Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=83.9 files_done=65 resolved=1183 errors=2591 current=tests/test_scenario/conftest.py
+[2026-04-16T02:47:28Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=85.5 files_done=66 resolved=1217 errors=2644 current=redis/commands/helpers.py
+[2026-04-16T02:47:58Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=86.0 files_done=67 resolved=1233 errors=2660 current=tests/test_asyncio/test_connect.py
+[2026-04-16T02:49:11Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=87.2 files_done=68 resolved=1248 errors=2699 current=tests/test_multidb/test_failover.py
+[2026-04-16T02:49:51Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=87.9 files_done=70 resolved=1256 errors=2720 current=redis/commands/search/reducers.py
+[2026-04-16T02:50:51Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=88.9 files_done=72 resolved=1294 errors=2752 current=doctests/query_geo.py
+[2026-04-16T02:51:32Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=89.6 files_done=73 resolved=1300 errors=2774 current=tests/test_asyncio/test_ssl.py
+[2026-04-16T02:52:17Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=90.4 files_done=74 resolved=1314 errors=2798 current=redis/backoff.py
+[2026-04-16T02:53:35Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=91.6 files_done=76 resolved=1351 errors=2839 current=doctests/query_agg.py
+[2026-04-16T02:54:50Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=92.9 files_done=77 resolved=1370 errors=2879 current=doctests/cmds_cnxmgmt.py
+[2026-04-16T02:55:50Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=93.9 files_done=79 resolved=1381 errors=2911 current=docs/examples/opentelemetry/main.py
+[2026-04-16T02:56:47Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=94.8 files_done=81 resolved=1416 errors=2941 current=doctests/dt_cms.py
+[2026-04-16T02:58:00Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=96.1 files_done=83 resolved=1433 errors=2980 current=tests/test_multidb/test_config.py
+[2026-04-16T02:58:55Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=97.0 files_done=84 resolved=1461 errors=3009 current=redis/commands/bf/commands.py
+[2026-04-16T03:01:12Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=99.3 files_done=85 resolved=1461 errors=3082 current=doctests/dt_cuckoo.py
+[2026-04-16T03:01:57Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=100.0 files_done=87 resolved=1466 errors=3106 current=tests/test_driver_info.py
+[2026-04-16T03:03:35Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=101.6 files_done=89 resolved=1488 errors=3158 current=redis/exceptions.py
+[2026-04-16T03:04:11Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=102.2 files_done=92 resolved=1549 errors=3177 current=redis/multidb/command_executor.py
+[2026-04-16T03:05:26Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=103.5 files_done=93 resolved=1552 errors=3217 current=redis/multidb/exception.py
+[2026-04-16T03:06:02Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=104.1 files_done=96 resolved=1580 errors=3236 current=redis/commands/timeseries/info.py
+[2026-04-16T03:06:35Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=104.7 files_done=98 resolved=1587 errors=3254 current=redis/observability/config.py
+[2026-04-16T03:07:48Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=105.9 files_done=101 resolved=1605 errors=3293 current=doctests/query_range.py
+[2026-04-16T03:08:41Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=106.7 files_done=102 resolved=1613 errors=3321 current=doctests/dt_geo.py
+[2026-04-16T03:09:49Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=107.9 files_done=104 resolved=1633 errors=3357 current=redis/multidb/config.py
+[2026-04-16T03:10:27Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=108.5 files_done=105 resolved=1635 errors=3377 current=redis/multidb/failure_detector.py
+[2026-04-16T03:10:59Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=109.0 files_done=108 resolved=1647 errors=3394 current=redis/asyncio/multidb/command_executor.py
+[2026-04-16T03:12:16Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=110.3 files_done=109 resolved=1653 errors=3435 current=doctests/cmds_set.py
+[2026-04-16T03:13:22Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=111.4 files_done=112 resolved=1673 errors=3470 current=doctests/cmds_sorted_set.py
+[2026-04-16T03:13:54Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=112.0 files_done=113 resolved=1682 errors=3487 current=redis/auth/token.py
+[2026-04-16T03:14:43Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=112.8 files_done=116 resolved=1690 errors=3513 current=tests/test_asyncio/test_retry.py
+[2026-04-16T03:15:45Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=113.8 files_done=117 resolved=1704 errors=3546 current=redis/commands/search/result.py
+[2026-04-16T03:16:54Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=115.0 files_done=119 resolved=1727 errors=3583 current=tests/test_sentinel_managed_connection.py
+[2026-04-16T03:19:06Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=117.2 files_done=122 resolved=1738 errors=3653 current=redis/observability/attributes.py
+[2026-04-16T03:19:46Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=117.8 files_done=124 resolved=1753 errors=3674 current=doctests/cmds_hash.py
+[2026-04-16T03:20:20Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=118.4 files_done=125 resolved=1764 errors=3692 current=doctests/dt_bloom.py
+[2026-04-16T03:20:57Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=119.0 files_done=127 resolved=1779 errors=3712 current=redis/asyncio/http/http_client.py
+[2026-04-16T03:21:29Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=119.6 files_done=130 resolved=1794 errors=3729 current=redis/commands/search/document.py
+[2026-04-16T03:22:11Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=120.2 files_done=132 resolved=1798 errors=3751 current=redis/multidb/circuit.py
+[2026-04-16T03:22:41Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=120.7 files_done=134 resolved=1810 errors=3767 current=redis/asyncio/retry.py
+[2026-04-16T03:23:19Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=121.4 files_done=137 resolved=1826 errors=3787 current=redis/asyncio/multidb/failure_detector.py
+[2026-04-16T03:24:10Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=122.2 files_done=144 resolved=1846 errors=3814 current=redis/typing.py
+[2026-04-16T03:24:57Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=123.0 files_done=148 resolved=1860 errors=3839 current=redis/asyncio/multidb/failover.py
+[2026-04-16T03:25:35Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=123.6 files_done=155 resolved=1872 errors=3859 current=tests/test_asyncio/compat.py
+[2026-04-16T03:25:37Z] [iter=6] Target type resolved target_type=call_site resolved=1873 errors=3860 secs=7285 mem_mb=1629 MB
+[2026-04-16T03:25:37Z] [iter=6] Resolving target type target_type=import_statement count=1977
+[2026-04-16T03:25:43Z] [iter=6] Target type resolved target_type=import_statement resolved=714 errors=0 secs=5 mem_mb=1629 MB
+[2026-04-16T03:25:43Z] [iter=6] Resolving target type target_type=extends_clause count=491
+[2026-04-16T03:25:45Z] [iter=6] Target type resolved target_type=extends_clause resolved=241 errors=0 secs=2 mem_mb=1629 MB
+[2026-04-16T03:26:07Z] [iter=6] Step 5: Writing final enrichment file triples=326943
+[2026-04-16T03:26:14Z] [iter=6] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/b72f24ad6a2226d46aed770e18094a86117d2217.nq.gz size_kb=7399
+[2026-04-16T03:26:14Z] [iter=6] Checkpoint cleared (enrichment complete)
+[2026-04-16T03:26:14Z] [iter=6] PHASE END: enrich elapsed_s=7458 elapsed_min=124.3 total_triples=326943
